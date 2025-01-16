@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;  
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.task , .painel-tasks{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #aa6c32;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.task img{
+    width: 20px;
+    cursor:pointer;
+}

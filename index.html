@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDo-list</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/myStyles.css">
+</head>
+<body>
+    <h1>To-do List!!</h1>
+    <h3>manage your daily tasks</h3>
+    <main id="card-tasks">
+        <div class="painel-tasks">
+            <p>Insira uma tarefa:</p>
+            <input type="text" id="#in-task">
+            <button id="btn" onclick="novaTarefa()">Nova tarefa</button>
+        </div>
+        <div id="here"> 
+            <div class="task" id="task-box"> 
+                <div id="task-checked-box">
+                    <img src="img/square.png" alt="" onclick="taskChecked()">
+                </div>
+                <p id="out-task">recolher o lixo </p>
+                <img src="img/delete.png" alt="" onclick="deleteTask()">
+            </div>
+        </div>
+     
+        
+    </main>  
+    
+ <script src="scripts/myScripts.js"></script>
+</body>
+</html>
