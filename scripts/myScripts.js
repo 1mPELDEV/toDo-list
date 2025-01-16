@@ -14,10 +14,9 @@ function taskNoChecked (){
 // // // CRIAR NOVA TAREFA 
 
   function novaTarefa() {
-     const inTask = document.getElementById("in-task");
+     const inTask = document.getElementById("in-task").value;
      const taskBox = document.getElementById("here");  
-    //  const taskValue = inTask.value;
-         taskBox.innerHTML += `
+     taskBox.innerHTML += `
         <div class="task" id="task-box"> 
                 <div id="task-checked-box">
                       <img src="img/square.png" alt="" onclick="taskChecked()">
@@ -27,4 +26,5 @@ function taskNoChecked (){
          </div>
    `;
    }
+
 

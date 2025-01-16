@@ -2,6 +2,7 @@ body {
     height: 100vh;
     font-family: 'Open Sans Condensed', sans-serif;
     color: black;  
+    background-color: #F5F5DC; 
 }
 h1 {
     font-size: 3rem;
@@ -15,7 +16,9 @@ h3{
 .task , .painel-tasks{
     width: 90%;
     margin: 0 auto;
-    border: 1px solid #aa6c32;
+    border: 3px solid #8B4513;
+    border-radius: 15px;border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-around;
@@ -25,4 +28,17 @@ h3{
 .task img{
     width: 20px;
     cursor:pointer;
+}
+
+.medieval-border {
+    border: 10px solid #8B4513; /* cor marrom imitando madeira */
+    border-radius: 15px; /* bordas arredondadas para um efeito mais suave */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adiciona sombra */
+    background-color: #F5F5DC; /* cor de fundo bege clara */
+}
+
+/* Elemento exemplo */
+div {
+    class: medieval-border;
 }
