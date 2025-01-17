@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Overpass", serif;
+}
+
 body {
     height: 100vh;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -7,11 +13,17 @@ body {
 h1 {
     font-size: 3rem;
     text-align: center;
+    padding-top: 1rem;
 }
 h3{
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+#paragrafer {
+    position: relative;
+    top: 2px;
+
 }
 .task , .painel-tasks{
     width: 90%;
@@ -24,11 +36,16 @@ h3{
     justify-content: space-around;
     padding: 1rem 0;
 }
+.painel-tasks input {
+    border: none;
+}
+
 
 .task img{
     width: 20px;
     cursor:pointer;
 }
+
 
 .medieval-border {
     border: 10px solid #8B4513; /* cor marrom imitando madeira */
@@ -38,7 +55,50 @@ h3{
     background-color: #F5F5DC; /* cor de fundo bege clara */
 }
 
-/* Elemento exemplo */
-div {
-    class: medieval-border;
-}
+@media (max-width: 450px) {
+    .painel-tasks {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+    }
+  
+    .painel-tasks input {
+      margin: 0.6rem auto;
+      width: 78% !important;
+      padding: 0.4rem 0;
+    }
+    .painel-tasks button {
+        margin: 0 auto;
+        width: 80%;
+        padding: 0.3rem 0;
+    }
+  }
+  
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        width: 80%;
+        margin: 0 auto    
+    }
+  }
+
+  #in-task {
+    width: 200px;
+
+  }
+  
+  /* Para dispositivos grandes (desktops) */
+  @media (min-width: 1025px) {
+    main {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    #in-task {
+        width: 400px;
+    
+      }
+  }
+  
